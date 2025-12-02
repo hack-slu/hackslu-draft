@@ -1,0 +1,150 @@
+/* HackSLU Component Styles */
+
+/* Import Tiny5 font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+/* Apply Tiny5 font globally */
+* {
+  font-family: 'Tiny5', sans-serif;
+}
+
+/* Global dotted background */
+.dotted-background {
+  position: fixed;
+  inset: 0;
+  z-index: -10;
+  background-image: radial-gradient(circle, rgba(100, 100, 100, 0.4) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+  background-color: #000000;
+}
+
+/* Navigation styles */
+.nav-container {
+  position: fixed;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  z-index: 50;
+  border-bottom: 4px solid #2563eb;
+  transition: transform 0.3s;
+}
+
+.nav-visible {
+  transform: translateY(0);
+}
+
+.nav-hidden {
+  transform: translateY(-100%);
+}
+
+/* Hero section */
+.hero-section {
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  position: relative;
+}
+
+/* Logo and title container */
+.logo-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.logo-image {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+
+.main-title {
+  font-size: 3.75rem;
+  font-weight: 900;
+  color: #3b82f6;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Menu arrow */
+.menu-arrow {
+  margin-right: 0.75rem;
+  font-size: 1.5rem;
+  transition: all 0.3s;
+}
+
+.menu-arrow.visible {
+  color: #60a5fa;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  opacity: 1;
+}
+
+.menu-arrow.hidden {
+  opacity: 0;
+}
+
+/* Menu item text */
+.menu-item-text.active {
+  color: #60a5fa;
+}
+
+/* Section styles */
+.section {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+/* Button styles */
+.signup-button {
+  display: inline-block;
+  background-color: #2563eb;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transition: all 0.3s;
+}
+
+.signup-button:hover {
+  background-color: #1d4ed8;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  transform: scale(1.05);
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #000000;
+  color: white;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

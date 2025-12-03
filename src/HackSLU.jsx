@@ -266,7 +266,7 @@ export default function HackSLU() {
         <p className="text-center mb-8 text-lg">Ready to join the adventure? Sign up now!</p>
         <div className="flex justify-center">
           <a
-            href="https://example_link.com/signup"
+            href="https://forms.gle/HsSLZAkZdPWdbUh27"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors text-xl font-bold shadow-lg hover:shadow-xl transform hover:scale-105"
